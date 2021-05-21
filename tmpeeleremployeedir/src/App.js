@@ -2,6 +2,7 @@ import React ,{useState} from "react";
 import Nav from "./components/Nav";
 import Hero from "./components/Hero";
 import Card from "./components/Card";
+import SearchBar from "./components/SearchBar";
 
 
 
@@ -16,9 +17,17 @@ const handleInputChange = event => {
 
 }
 
+const handleSubmit = event => {
+
+}
 
 
 
-return()
+
+
+
+return(
+    <SearchBar handleInputChange={handleInputChange} handleSubmit={handleSubmit}/> 
+)
 
 }
